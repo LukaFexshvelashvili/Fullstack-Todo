@@ -9,11 +9,17 @@
     --input-bg: #0f0936;
     --label: rgba(255, 255, 255, 0.9);
     --placeholder: #3d2ea4;
+    --li-hover: #0f0839;
+    --icon-bg: #190e5b;
 }
 
 @font-face {
-    font-family: main_k;
+    font-family: main_kb;
     src: url("./fonts/K2D-Bold.ttf");
+}
+@font-face {
+    font-family: main_k;
+    src: url("./fonts/K2D-SemiBold.ttf");
 }
 * {
     padding: 0;

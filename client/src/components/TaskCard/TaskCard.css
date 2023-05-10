@@ -1,0 +1,99 @@
+.TaskCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 280px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: var(--red);
+  box-shadow: 0px 10px 0px rgba(255, 46, 99, 0.25);
+  font-family: main_k;
+  padding: 15px 10px;
+  padding-bottom: 70px;
+}
+.TaskCard .Line {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 15px 0;
+}
+.TaskCard .TaskCardStarter {
+  display: flex;
+  align-items: center;
+}
+.TaskCard .TaskCardStarter .TaskCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--red);
+  letter-spacing: 2px;
+  font-size: 20px;
+  height: 40px;
+  aspect-ratio: 1;
+  font-family: main_kb;
+  margin-right: 20px;
+}
+.TaskCard .TaskCardStarter p {
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.TaskCard .MiniTaskRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.TaskCard .MiniTaskRow .MiniTask {
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.TaskCard .MiniTaskRow .MiniTask:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.TaskCard .MiniTaskRow .MiniTask .MTime {
+  text-align: end;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--white);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 12px;
+}
+.TaskCard .MiniTaskRow .MiniTask .MTitle {
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: var(--white);
+}
+.TaskCard .MiniTaskRow .MiniTask .MDescription {
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.TaskCard .MiniTaskButton {
+  position: absolute;
+  bottom: 15px;
+  height: 35px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  border: 0;
+  background-color: #ffffff;
+  color: var(--red);
+  font-size: 16px;
+  font-family: main_kb;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.TaskCard .MiniTaskButton:hover {
+  background-color: #ededed;
+}
