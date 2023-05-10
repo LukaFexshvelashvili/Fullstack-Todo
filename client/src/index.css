@@ -1,0 +1,22 @@
+:root {
+  --bg: #050314;
+  --nav-bg: #090622;
+  --blue: #05bfdb;
+  --yellow: #ff993a;
+  --red: #ff2e63;
+  --purple: #9c2dff;
+  --white: #ffffff;
+  --input-bg: #0f0936;
+  --label: rgba(255, 255, 255, 0.9);
+  --placeholder: #3d2ea4;
+}
+
+@font-face {
+  font-family: main_k;
+  src: url("./fonts/K2D-Bold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
