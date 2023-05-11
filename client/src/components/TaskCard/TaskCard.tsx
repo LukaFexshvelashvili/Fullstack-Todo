@@ -1,29 +1,46 @@
 import "./TaskCard.css";
 
-export default function TaskCard() {
+interface ITaskCard {
+  color: string;
+  title: string;
+  taskCount: number;
+  tasks: {
+    time: string;
+    title: string;
+    description: string;
+  }[];
+}
+
+export default function TaskCard({
+  color,
+  title,
+  taskCount,
+  tasks,
+}: ITaskCard) {
   return (
-    <div className="TaskCard">
+    <div className={`TaskCard ${color}`}>
       <div className="TaskCardStarter">
-        <div className="TaskCount">12</div>
-        <p>BOOKED TASKS</p>
+        <div className="TaskCount">{taskCount}</div>
+        <p>{title} TASKS</p>
       </div>
       <div className="Line"></div>
       <div className="MiniTaskRow">
-        <div className="MiniTask">
-          <div className="MTime">6 May</div>
-          <div className="MTitle">Have to go with friends</div>
-          <div className="MDescription">We are going to movie</div>
-        </div>
-        <div className="MiniTask">
-          <div className="MTime">6 May</div>
-          <div className="MTitle">Have to go with friends</div>
-          <div className="MDescription">We are going to movie</div>
-        </div>
-        <div className="MiniTask">
-          <div className="MTime">6 May</div>
-          <div className="MTitle">Have to go with friends</div>
-          <div className="MDescription">We are going to movie</div>
-        </div>
+        {tasks.map(
+          (
+            e: {
+              time: string;
+              title: string;
+              description: string;
+            },
+            i: number
+          ) => (
+            <div className="MiniTask">
+              <div className="MTime">{e.time}</div>
+              <div className="MTitle">{e.title}</div>
+              <div className="MDescription">{e.description}</div>
+            </div>
+          )
+        )}
       </div>
       <button className="MiniTaskButton">SEE ALL</button>
     </div>

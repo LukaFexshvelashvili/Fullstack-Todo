@@ -1,5 +1,5 @@
-import TaskCard from "../components/TaskCard/TaskCard";
 import Nav from "../components/nav/Nav";
+import Home from "../pages/Home/Home";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Nav />
       <div className="Content">
-        <TaskCard />
+        <Home />
       </div>
     </div>
   );

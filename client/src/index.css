@@ -1,6 +1,7 @@
 :root {
   --bg: #050314;
   --nav-bg: #090622;
+  --block-bg: #090522;
   --blue: #05bfdb;
   --yellow: #ff993a;
   --red: #ff2e63;
@@ -11,6 +12,16 @@
   --placeholder: #3d2ea4;
   --li-hover: #0f0839;
   --icon-bg: #190e5b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @font-face {

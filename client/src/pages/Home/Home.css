@@ -1,0 +1,68 @@
+.CreateBlock {
+  width: 100%;
+  padding: 20px;
+}
+.CreateBlock h2 {
+  font-family: main_k;
+  letter-spacing: 2px;
+  color: var(--white);
+  font-size: 24px;
+}
+.CreateBlock h2 span {
+  color: var(--red);
+}
+.CreateBlock form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.CreateBlock .Inputer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.CreateBlock .Inputer .InpHolder {
+  font-family: main_k;
+  letter-spacing: 2px;
+  color: var(--label);
+}
+.CreateBlock .Inputer input,
+.CreateBlock .Inputer textarea {
+  font-family: main_k;
+  letter-spacing: 1px;
+  font-size: 16px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--input-bg);
+  outline: none;
+  background-color: var(--input-bg);
+  resize: none;
+  padding: 0px 10px;
+  color: var(--white);
+}
+.CreateBlock .Inputer input::placeholder,
+.CreateBlock .Inputer textarea::placeholder {
+  color: var(--placeholder);
+}
+.CreateBlock .Inputer textarea {
+  height: 100px;
+  padding: 10px;
+}
+.CreateBlock .Inputer .InpRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.CreateBlock .Inputer .MiniInp {
+  height: 35px;
+  width: 120px;
+  text-align: center;
+}
+
+.RCol {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

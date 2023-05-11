@@ -2,8 +2,25 @@
     display: flex;
     min-height: 100vh;
 }
+body {
+    background-color: var(--bg);
+}
 .Content {
     width: 100%;
     background-color: var(--bg);
     padding: 20px;
+}
+.TaskRow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.g-7 {
+    width: 70%;
+}
+.g-3 {
+    width: 30%;
+}
+.SBlock {
+    background-color: var(--block-bg);
 }

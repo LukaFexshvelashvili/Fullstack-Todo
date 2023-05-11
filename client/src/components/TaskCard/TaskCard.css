@@ -4,10 +4,8 @@
   align-items: center;
   position: relative;
   min-height: 280px;
-  width: 250px;
+  width: 260px;
   border-radius: 10px;
-  background-color: var(--red);
-  box-shadow: 0px 10px 0px rgba(255, 46, 99, 0.25);
   font-family: main_k;
   padding: 15px 10px;
   padding-bottom: 70px;
@@ -29,7 +27,6 @@
   justify-content: center;
   background-color: var(--white);
   border-radius: 5px;
-  color: var(--red);
   letter-spacing: 2px;
   font-size: 20px;
   height: 40px;
@@ -86,14 +83,57 @@
   border-radius: 5px;
   border: 0;
   background-color: #ffffff;
-  color: var(--red);
   font-size: 16px;
   font-family: main_kb;
   letter-spacing: 2px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: box-shadow 0.2s;
 }
 .TaskCard .MiniTaskButton:hover {
-  background-color: #ededed;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.BlueCard {
+  background-color: var(--blue);
+  box-shadow: 0px 10px 0px rgba(5, 191, 219, 0.25);
+}
+.BlueCard .TaskCount {
+  color: var(--blue);
+}
+.BlueCard .MiniTaskButton {
+  color: var(--blue);
+}
+
+.YellowCard {
+  background-color: var(--yellow);
+  box-shadow: 0px 10px 0px rgba(255, 153, 58, 0.25);
+}
+.YellowCard .TaskCount {
+  color: var(--yellow);
+}
+.YellowCard .MiniTaskButton {
+  color: var(--yellow);
+}
+
+.RedCard {
+  background-color: var(--red);
+  box-shadow: 0px 10px 0px rgba(255, 46, 99, 0.25);
+}
+.RedCard .TaskCount {
+  color: var(--red);
+}
+.RedCard .MiniTaskButton {
+  color: var(--red);
+}
+
+.PurpleCard {
+  background-color: var(--purple);
+  box-shadow: 0px 10px 0px rgba(156, 45, 255, 0.25);
+}
+.PurpleCard .TaskCount {
+  color: var(--purple);
+}
+.PurpleCard .MiniTaskButton {
+  color: var(--purple);
 }

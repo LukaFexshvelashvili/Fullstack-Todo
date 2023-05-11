@@ -1,0 +1,67 @@
+.CreateBlock {
+    width: 100%;
+    padding: 20px;
+    h2 {
+        font-family: main_k;
+        letter-spacing: 2px;
+        color: var(--white);
+        font-size: 24px;
+        span {
+            color: var(--red);
+        }
+    }
+    form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Inputer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .InpHolder {
+            font-family: main_k;
+            letter-spacing: 2px;
+
+            color: var(--label);
+        }
+        input,
+        textarea {
+            font-family: main_k;
+            letter-spacing: 1px;
+            font-size: 16px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0;
+            background-color: var(--input-bg);
+            outline: none;
+            background-color: var(--input-bg);
+            resize: none;
+            padding: 0px 10px;
+            color: var(--white);
+            &::placeholder {
+                color: var(--placeholder);
+            }
+        }
+        textarea {
+            height: 100px;
+            padding: 10px;
+        }
+        .InpRow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .MiniInp {
+            height: 35px;
+            width: 120px;
+            text-align: center;
+        }
+    }
+}
+.RCol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
