@@ -1,0 +1,133 @@
+.CreateBlock {
+    width: 100%;
+    padding: 20px;
+    h2 {
+        font-family: main_k;
+        letter-spacing: 2px;
+        color: var(--white);
+        font-size: 24px;
+        span {
+            color: var(--red);
+        }
+    }
+    form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Inputer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .InpHolder {
+            font-family: main_k;
+            letter-spacing: 2px;
+            color: var(--label);
+        }
+        input,
+        textarea {
+            font-family: main_k;
+            letter-spacing: 1px;
+            font-size: 16px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0;
+            background-color: var(--input-bg);
+            outline: none;
+            background-color: var(--input-bg);
+            resize: none;
+            padding: 0px 10px;
+            color: var(--white);
+            &::placeholder {
+                color: var(--placeholder);
+            }
+        }
+        textarea {
+            height: 100px;
+            padding: 10px;
+        }
+        .InpRow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .MiniInp {
+            height: 35px;
+            width: 120px;
+            text-align: center;
+        }
+    }
+}
+.CategoryChoose {
+    margin: 20px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .CategoryBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 160px;
+        font-family: main_kb;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 16px;
+        cursor: pointer;
+        transition: border 0.2s;
+    }
+    .blue {
+        color: var(--blue);
+        background-color: rgba(5, 191, 219, 0.1);
+        border: 2px solid transparent;
+        &.CategoryActive {
+            border: 2px solid var(--blue);
+        }
+    }
+    .yellow {
+        color: var(--yellow);
+        background-color: rgba(255, 153, 58, 0.1);
+        border: 2px solid transparent;
+        &.CategoryActive {
+            border: 2px solid var(--yellow);
+        }
+    }
+    .red {
+        color: var(--red);
+        background-color: rgba(255, 46, 98, 0.1);
+        border: 2px solid transparent;
+        &.CategoryActive {
+            border: 2px solid var(--red);
+        }
+    }
+    .purple {
+        color: var(--purple);
+        background-color: rgba(157, 45, 255, 0.1);
+        border: 2px solid transparent;
+        &.CategoryActive {
+            border: 2px solid var(--purple);
+        }
+    }
+}
+.AddTask {
+    display: block;
+    margin-left: auto;
+    background-color: var(--green);
+    border-radius: 5px;
+    color: var(--bg);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: main_k;
+    letter-spacing: 1px;
+    height: 35px;
+    width: 180px;
+    border: 0;
+    box-shadow: 0px 6px 0px rgba(40, 223, 153, 0.25);
+    transition: box-shadow 0.3s;
+    &:hover {
+        box-shadow: 0px 0px 0px rgba(40, 223, 153, 0.25), 0px 0px 15px rgba(40, 223, 153, 0.3);
+    }
+}

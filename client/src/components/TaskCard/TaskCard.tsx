@@ -21,7 +21,7 @@ export default function TaskCard({
     <div className={`TaskCard ${color}`}>
       <div className="TaskCardStarter">
         <div className="TaskCount">{taskCount}</div>
-        <p>{title} TASKS</p>
+        <p>{title} Tasks</p>
       </div>
       <div className="Line"></div>
       <div className="MiniTaskRow">

@@ -1,6 +1,8 @@
 import "./Home.css";
 import TaskCards from "../../arrays/TaskCards";
 import TaskCard from "../../components/TaskCard/TaskCard";
+import CreateTask from "./components/CreateTask/CreateTask";
+import UpcomingTasks from "./components/UpcomingTasks/UpcomingTasks";
 
 interface ITaskCard {
   color: string;
@@ -28,30 +30,10 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="CreateBlock SBlock">
-          <h2>
-            CREATE <span>TASK</span>
-          </h2>
-
-          <form>
-            <div className="Inputer">
-              <p className="InpHolder">Task Name</p>
-              <input type="text" />
-            </div>
-            <div className="Inputer">
-              <p className="InpHolder">Task Description</p>
-              <textarea></textarea>
-            </div>
-            <div className="Inputer">
-              <p className="InpHolder">Task Schedule</p>
-              <div className="InpRow">
-                <input type="number" className="MiniInp" placeholder="YEAR" />
-                <input type="number" className="MiniInp" placeholder="MONTH" />
-                <input type="number" className="MiniInp" placeholder="DAY" />
-              </div>
-            </div>
-          </form>
-        </div>
+        <CreateTask />
+      </div>
+      <div className="RCol g-3">
+        <UpcomingTasks />
       </div>
     </div>
   );
