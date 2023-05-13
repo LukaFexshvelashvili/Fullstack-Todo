@@ -134,3 +134,74 @@
 .AddTask:hover {
   box-shadow: 0px 0px 0px rgba(40, 223, 153, 0.25), 0px 0px 15px rgba(40, 223, 153, 0.3);
 }
+
+.AlertBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.3s;
+}
+.AlertBack .TaskAlert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  padding: 50px 0;
+  width: 95%;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: var(--block-bg);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.AlertBack .TaskAlert p {
+  font-family: main_k;
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: var(--white);
+}
+.AlertBack .TaskAlert button {
+  margin-top: 20px;
+  height: 40px;
+  width: 220px;
+  border-radius: 5px;
+  border: 0;
+  font-family: main_kb;
+  letter-spacing: 2px;
+  font-size: 17px;
+  color: var(--block-bg);
+  background-color: var(--green);
+  cursor: pointer;
+  box-shadow: 0px 6px 0px rgba(40, 223, 153, 0.25);
+  transition: box-shadow 0.2s;
+}
+.AlertBack .TaskAlert button:hover {
+  box-shadow: 0px 0px 0px rgba(40, 223, 153, 0.25), 0px 0px 15px rgba(40, 223, 153, 0.3);
+}
+.AlertBack .TaskAlert .erB {
+  background-color: var(--red);
+  box-shadow: 0px 6px 0px rgba(223, 64, 40, 0.25);
+}
+.AlertBack .TaskAlert .erB:hover {
+  box-shadow: 0px 0px 0px rgba(223, 64, 40, 0.25), 0px 0px 15px rgba(223, 64, 40, 0.3);
+}
+
+.SAlert {
+  visibility: visible;
+  opacity: 1;
+}
+.SAlert .TaskAlert {
+  opacity: 1;
+}

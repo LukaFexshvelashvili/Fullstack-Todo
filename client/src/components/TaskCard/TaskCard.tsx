@@ -35,7 +35,7 @@ export default function TaskCard({
             i: number
           ) =>
             i < 3 ? (
-              <div className="MiniTask">
+              <div key={i} className="MiniTask">
                 <div className="MTime">{e.time}</div>
                 <div className="MTitle">{e.title}</div>
                 <div className="MDescription">{e.description}</div>

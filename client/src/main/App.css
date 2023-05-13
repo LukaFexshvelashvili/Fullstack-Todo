@@ -26,3 +26,45 @@ body {
 .g-3 {
   width: 35%;
 }
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.3s;
+}
+.Loader .LoaderInside {
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 12px solid transparent;
+  border-top: 12px solid var(--green);
+  border-bottom: 12px solid var(--green);
+  animation: loading 1.5s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.SLoader {
+  visibility: visible;
+  opacity: 1;
+}
+.SLoader .LoaderInside {
+  opacity: 1;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
