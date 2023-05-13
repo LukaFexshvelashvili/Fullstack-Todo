@@ -1,0 +1,76 @@
+.Bookmarks h2 {
+  display: flex;
+  align-items: center;
+}
+.Bookmarks h2 svg {
+  margin-right: 10px;
+}
+.Bookmarks .BookmarkRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+.Bookmarks .BookmarkRow .BookmarkBlock {
+  width: 300px;
+  border-radius: 8px;
+  background-color: var(--input-bg);
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .BookmarkContent {
+  border-radius: 8px;
+  height: 115px;
+  padding: 15px;
+}
+.Bookmarks .BookmarkRow .BookmarkBlock h3 {
+  color: var(--white);
+  font-size: 18px;
+  font-family: main_k;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .Line {
+  height: 2px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 8px auto 10px;
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .BookmarkTask {
+  color: var(--white);
+  font-size: 16px;
+  font-family: main_k;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .BookmarkProgress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 180px;
+  font-size: 15px;
+  font-family: main_k;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin: 6px auto;
+  user-select: none;
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .Stat1 {
+  color: #ff004d;
+  background-color: rgba(255, 0, 76, 0.1);
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .Stat2 {
+  color: #fff84d;
+  background-color: rgba(255, 249, 77, 0.1);
+}
+.Bookmarks .BookmarkRow .BookmarkBlock .Stat3 {
+  color: var(--green);
+  background-color: rgba(40, 223, 153, 0.1);
+}

@@ -1,5 +1,10 @@
 .Home {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Home .RRow {
+  display: flex;
   gap: 20px;
 }
 
@@ -7,4 +12,22 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.RCol2 {
+  gap: 20px;
+}
+
+.SBlock {
+  background-color: var(--block-bg);
+  padding: 20px;
+}
+.SBlock h2 {
+  font-family: main_k;
+  letter-spacing: 3px;
+  color: var(--white);
+  font-size: 22px;
+}
+.SBlock h2 span {
+  color: var(--red);
 }

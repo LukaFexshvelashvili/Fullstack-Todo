@@ -19,6 +19,16 @@ const TaskCards = [
         title: "Book day",
         description: "Read books ALL DAYYY :))))",
       },
+      {
+        time: "6 May",
+        title: "Have to go with friends",
+        description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
     ],
   },
   {
@@ -30,6 +40,26 @@ const TaskCards = [
         time: "6 May",
         title: "Have to go with friends",
         description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
       },
       {
         time: "6 May",
@@ -63,6 +93,51 @@ const TaskCards = [
         title: "Book day",
         description: "Read books ALL DAYYY :))))",
       },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Have to go with friends",
+        description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Have to go with friends",
+        description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
     ],
   },
   {
@@ -74,6 +149,36 @@ const TaskCards = [
         time: "6 May",
         title: "Have to go with friends",
         description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Have to go with friends",
+        description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Have to go with friends",
+        description: "We are going to movie",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
+      },
+      {
+        time: "6 May",
+        title: "Going Zoo",
+        description: "Go to zoo with my family",
+      },
+      {
+        time: "6 May",
+        title: "Book day",
+        description: "Read books ALL DAYYY :))))",
       },
       {
         time: "6 May",

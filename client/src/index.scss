@@ -14,6 +14,16 @@
     --li-hover: #0f0839;
     --icon-bg: #190e5b;
 }
+
+::-webkit-scrollbar {
+    background-color: #120c39;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #261876;
+    border-radius: 5px;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

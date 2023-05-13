@@ -2,6 +2,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: sticky;
+  top: 0px;
   min-width: 350px;
   height: 100vh;
   background-color: var(--nav-bg);

@@ -1,6 +1,5 @@
 .UpcomingTasks {
-    padding: 20px;
-    padding-bottom: 30px;
+    height: 45%;
     h2 {
         text-align: center;
         font-family: main_k;
@@ -14,8 +13,9 @@
     .UTasksRow {
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
-        gap: 35px;
+        gap: 40px;
+        justify-content: center;
+        height: 100%;
         .UTask {
             display: flex;
             align-items: center;

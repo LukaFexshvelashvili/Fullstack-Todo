@@ -3,8 +3,10 @@ import TaskCards from "../../arrays/TaskCards";
 import TaskCard from "../../components/TaskCard/TaskCard";
 import CreateTask from "./components/CreateTask/CreateTask";
 import UpcomingTasks from "./components/UpcomingTasks/UpcomingTasks";
+import CompletedTasks from "./components/CompletedTasks/CompletedTasks";
+import Bookmarks from "./components/Bookmarks/Bookmarks";
 
-interface ITaskCard {
+export interface ITaskCard {
   color: string;
   title: string;
   taskCount: number;
@@ -18,23 +20,27 @@ interface ITaskCard {
 export default function Home() {
   return (
     <div className="Home">
-      <div className="RCol g-7">
-        <div className="TaskRow">
-          {TaskCards.map((e: ITaskCard, i: number) => (
-            <TaskCard
-              key={i}
-              color={e.color}
-              title={e.title}
-              taskCount={e.taskCount}
-              tasks={e.tasks}
-            />
-          ))}
+      <div className="RRow">
+        <div className="RCol g-7">
+          <div className="TaskRow">
+            {TaskCards.map((e: ITaskCard, i: number) => (
+              <TaskCard
+                key={i}
+                color={e.color}
+                title={e.title}
+                taskCount={e.taskCount}
+                tasks={e.tasks}
+              />
+            ))}
+          </div>
+          <CreateTask />
         </div>
-        <CreateTask />
+        <div className="RCol RCol2 g-3">
+          <UpcomingTasks />
+          <CompletedTasks />
+        </div>
       </div>
-      <div className="RCol g-3">
-        <UpcomingTasks />
-      </div>
+      <Bookmarks />
     </div>
   );
 }

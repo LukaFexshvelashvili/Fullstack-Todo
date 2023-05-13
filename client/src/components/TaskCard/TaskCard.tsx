@@ -33,13 +33,14 @@ export default function TaskCard({
               description: string;
             },
             i: number
-          ) => (
-            <div className="MiniTask">
-              <div className="MTime">{e.time}</div>
-              <div className="MTitle">{e.title}</div>
-              <div className="MDescription">{e.description}</div>
-            </div>
-          )
+          ) =>
+            i < 3 ? (
+              <div className="MiniTask">
+                <div className="MTime">{e.time}</div>
+                <div className="MTitle">{e.title}</div>
+                <div className="MDescription">{e.description}</div>
+              </div>
+            ) : undefined
         )}
       </div>
       <button className="MiniTaskButton">SEE ALL</button>

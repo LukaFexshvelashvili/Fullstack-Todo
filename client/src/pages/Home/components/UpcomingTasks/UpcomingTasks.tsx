@@ -5,7 +5,7 @@ export default function UpcomingTasks() {
   return (
     <div className="SBlock UpcomingTasks">
       <h2>
-        UPCOMING <span>TASKS</span>
+        <span>UPCOMING</span> TASKS
       </h2>
       <div className="UTasksRow">
         {TaskCards.map((e, i: number) => (

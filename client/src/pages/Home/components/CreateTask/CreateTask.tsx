@@ -23,7 +23,7 @@ export default function CreateTask() {
   return (
     <div className="CreateBlock SBlock">
       <h2>
-        CREATE <span>TASK</span>
+        <span>CREATE</span> TASK
       </h2>
 
       <form>
