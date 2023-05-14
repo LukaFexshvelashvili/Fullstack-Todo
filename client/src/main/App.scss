@@ -61,3 +61,30 @@ body {
         transform: rotate(360deg);
     }
 }
+@media (max-width: 1849px) {
+    .g-7 {
+        width: 70%;
+    }
+    .g-3 {
+        width: 30%;
+    }
+}
+@media (max-width: 1391px) {
+    nav {
+        position: absolute;
+        left: -150%;
+    }
+}
+@media (max-width: 1300px) {
+    .RRow {
+        flex-direction: column;
+    }
+    .RCol {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .Content {
+        padding: 20px 10px;
+    }
+}

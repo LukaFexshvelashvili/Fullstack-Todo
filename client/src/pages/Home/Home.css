@@ -31,3 +31,14 @@
 .SBlock h2 span {
   color: var(--red);
 }
+
+@media (max-width: 1300px) {
+  .TaskRow {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .UpcomingTasks .UTasksRow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
